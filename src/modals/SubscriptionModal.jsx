@@ -72,6 +72,23 @@ const SubscriptionModal = ({ isOpen, onClose, selectedPlan = null }) => {
       ],
       popular: false,
       stripePriceId: 'price_enterprise_monthly'
+    },
+    {
+      id: 4,
+      name: 'Renewed',
+      price: 12.00,
+      interval: '2 DAYS',
+      features: [
+        'Everything in Business',
+        'Custom development',
+        'White-label solution',
+        'On-premise deployment',
+        'SLA guarantee',
+        '24/7 dedicated support',
+        'Custom contract terms'
+      ],
+      popular: false,
+      stripePriceId: 'price_renewed_monthly'
     }
   ];
 

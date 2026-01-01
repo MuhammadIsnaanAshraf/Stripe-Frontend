@@ -261,7 +261,7 @@ const Home = () => {
       </div>
 
       {/* Products Grid */}
-      <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 ${user?.subscription?.subscriptionStatus !== 'active' && 'cursor-not-allowed opacity-20'}`} >
+      <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 ${(user?.subscription?.subscriptionStatus !== 'active' && user?.subscription?.subscriptionStatus !== 'trialing') && 'cursor-not-allowed opacity-20'}`} >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map((product) => (
             <div key={product.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
